@@ -32,16 +32,6 @@ class Splatool2BukiRouletteClient(discord.Client):
     チャンネルの閲覧権限と、メッセージの送信権限が必要です
     """
 
-    async def on_ready(self) -> None:
-        """
-        準備完了時の挙動
-        """
-        print("Ready!")
-        voice_channels = [
-            i for i in self.get_all_channels() if isinstance(i, discord.VoiceChannel)
-        ]
-        print(voice_channels)
-
     async def on_message(self, message: discord.Message) -> None:
         """
         メッセージを受け取ったときの行動
