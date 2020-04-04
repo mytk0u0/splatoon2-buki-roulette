@@ -1,0 +1,18 @@
+.env
+
+# macOS
+.DS_Store
+
+# python-related
+__pycache__/
+.mypy_cache
+.pytest_cache
+*.egg-info/
+dist/
+
+# editor-related
+.vscode
+
+# jupyter
+dev-notebook.ipynb
+.ipynb_checkpoints

@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "splatoon2-buki-roulette"
+version = "0.1.0"
+description = ""
+authors = ["mytk0u0 <mstk344+mytk@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+beautifulsoup4 = "^4.8.2"
+discord = "^1.0.1"
+requests = "^2.23.0"
+python-dotenv = "^0.12.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+jupyter = "^1.0.0"
+pylint = "^2.4.4"
+mypy = "^0.770"
+black = "^19.10b0"
+
+[tool.poetry.scripts]
+update-list = "splatoon2_buki_roulette.buki_list:update"
+run-roulette = "splatoon2_buki_roulette.splatoon2_buki_roulette:run"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
